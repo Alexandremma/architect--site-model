@@ -145,7 +145,7 @@ section#banner-section .view-filter {
 /********** SECTION SERVICES **********/
 #our-services-section {
     margin-bottom: 2rem;
-    padding: 0.5rem 1rem;
+    padding: 2rem 1rem;
 }
 
 .our-services-header {
@@ -153,21 +153,26 @@ section#banner-section .view-filter {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: star;
     gap: 0.5rem;
-    padding: 2rem 1rem;
+    padding: 0 0 1rem 0;
+}
+
+.our-services-header .decoration-line {
+    height: 2px;
+    width: 2.5rem;
+    background-color: #C0AC95;
 }
 
 .our-services-header .our-services-text {
     text-transform: uppercase;
     font-size: 1rem;
     color: #C0AC95;
-    border-top: 2px solid #C0AC95;
 }
 
 .our-services-header .our-services-title {
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.2em;
 }
 
