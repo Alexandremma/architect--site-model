@@ -66,8 +66,9 @@ nav {
 .menu-item-link {
     /* px-3 py-2 rounded-lg hover:bg-azul-escuro hover:text-white duration-200 */
     padding: 0.5rem 0.8rem;
-    transition: 0.3s;
+    font-size: 0.8rem;
     font-weight: 500;
+    transition: 0.3s;
 }
 
 .menu-item-link:hover {
@@ -86,7 +87,7 @@ section#banner-section {
     width: 100%;
     height: 24rem;
     /* padding: 0 1rem; */
-    background-image: url('../assets/img/escadas-banner.jpg');
+    background-image: url('../assets/compressed-img/escadas-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -214,24 +215,24 @@ section#banner-section .view-filter {
 }
 
 .service-list .service-item.service-item-design:hover {
-    background-image: url(../assets/img/design-plant.jpg);
+    background-image: url(../assets/compressed-img/design-plant.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center right;
 }
 
 .service-list .service-item.service-item-arch:hover {
-    background-image: url(../assets/img/building.jpg);
+    background-image: url(../assets/compressed-img/building.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center right;
 }
 
 .service-list .service-item.service-item-measure:hover {
-    background-image: url(../assets/img/pencil-project.jpg);
+    background-image: url(../assets/compressed-img/pencil-project.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center right;
 }
 
 .service-list .service-item .service-view {
