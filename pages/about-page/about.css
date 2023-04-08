@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Barlow Condensed', serif;
+    background-color: rgb(246, 246, 246);
+}
+
+/********** HEADER **********/
+header {
+    /* flex flex-row justify-between bg-azul-claro p-2 h-26 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0.5rem;
+    height: 6.5rem;
+}
+
+header .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo-link {
+    /* flex flex-row justify-center items-center gap-2 p-2 */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+header .logo-link .logo-title {
+    font-size: 2rem;
+    color: rgb(192, 172, 149);
+}
+
+nav {
+    /* flex justify-center items-center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-list {
+    /* flex flex-row justify-between gap-4 h-full */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5rem;
+    height: 100%;
+}
+
+.menu-item {
+    /* flex justify-center items-center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item-link {
+    /* px-3 py-2 rounded-lg hover:bg-azul-escuro hover:text-white duration-200 */
+    padding: 0.5rem 0.8rem;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.menu-item-link:hover {
+    /* background-color: rgb(136, 136, 136); */
+    background-color: rgb(192, 172, 149);
+    color: #fff;
+}
+
+/********** SECTION BANNER **********/
+section#banner-section {
+    /* w-full h-96 */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 24rem;
+    /* padding: 0 1rem; */
+    background-image: url('./../../assets/img/squad.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+section#banner-section .view-filter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #232323;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+#banner-section .banner-container {
+    /* flex flex-col */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    z-index: 9;
+}
+
+/* #banner-section .banner-container .banner-text {
+    font-size: 1rem;
+    color: #C0AC95;
+    border-bottom: 1px solid #C0AC95;
+    max-width: 7.5rem;
+} */
+
+#banner-section .banner-container .banner-title {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+#banner-section .banner-container .banner-subtitle {
+    font-size: 1rem;
+    color: rgba(255,255,255,  0.6);
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+/* #banner-section .banner-container .banner-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 120px;
+    background-color: #C0AC95;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.3s;
+} */
+
+/* #banner-section .banner-container .banner-link:hover {
+    background-color: #76634c;
+    cursor: pointer;
+} */
+
+/********** SECTION ABOUT US  **********/
+section#about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+section#about-us .about-us-image {
+    height: 10rem;
+    width: 100%;
+    border-radius: 0.2rem;
+}
+
+section#about-us .about-us-content {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+    padding: 1rem 0;
+}
+
+section#about-us .about-us-content .line-decoration {
+    height: 2px;
+    width: 2.5rem;
+    background-color: #C0AC95;
+}
+
+section#about-us .about-us-content .about-us-subtitle {
+    font-size: 1rem;
+    color: #C0AC95;
+    text-transform: uppercase;
+}
+
+section#about-us .about-us-content .about-us-title {
+    padding: 0.5rem 0 0 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+
+section#about-us .about-us-content .about-us-text {
+    margin: 1rem 0;
+    font-style: italic;
+    font-size: 1rem;
+    color: #C0AC95;
+}
+
+section#about-us .about-us-content .about-us-description {
+    font-size: 1rem;
+}
+
+/********** SECTION DEPOSITIONS **********/
+section#depositions {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#depositions .view-filter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #232323;
+    opacity: 0.7;
+}
+
+section#depositions .depositions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 22rem;
+    padding: 1rem;
+    background-image: url(../../assets/img/satisfied-customers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section#depositions .depositions-container .deposition-text {
+    font-family: 'Barlow', serif;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+}
+
+section#depositions .depositions-container .deposition-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 1;
+}
+
+section#depositions .depositions-container .deposition-info .deposition-image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    border: 2px solid #fff;
+}
+
+section#depositions .depositions-container .deposition-info .deposition-client {
+    display: flex;
+    flex-direction: column;
+}
+
+section#depositions .depositions-container .deposition-info .deposition-client .deposition-client-name {
+    font-size: 1.1rem;
+    color: #C0AC95;
+}
+
+section#depositions .depositions-container .deposition-info .deposition-client .deposition-client-function {
+    font-size: 1rem;
+    color: #868686;
+}
+
+/********** SECTION OUR TEAM **********/
+section#our-team {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem;
+}
+
+section#our-team .our-team-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#our-team .our-team-header .decoration-line {
+    height: 2px;
+    width: 2.5rem;
+    background-color: #C0AC95;
+}
+
+section#our-team .our-team-header .our-team-subtitle {
+    font-size: 1rem;
+    color: #C0AC95;
+    text-transform: uppercase;
+}
+
+section#our-team .our-team-header .our-team-title {
+    padding: 0.5rem 0 0 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+
+section#our-team .our-team-members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+section#our-team .our-team-members .our-team-member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+section#our-team .our-team-members .our-team-member .our-team-member-image {
+    width: 10rem;
+    height: 10rem;
+    outline: 1px solid #C0AC95;
+    border: 4px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 40px 0px;
+    border-radius: 100%;
+}
+
+section#our-team .our-team-members .our-team-member .our-team-member-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#our-team .our-team-members .our-team-member .our-team-member-info .our-team-member-name {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+section#our-team .our-team-members .our-team-member .our-team-member-info .our-team-member-function {
+    font-size: 1rem;
+    color: #868686;
+}
+
+/********** SECTION HIRE US **********/
+section#hire-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 4rem 1rem;
+    background-color: #C0AC95;
+    color: #fff;
+}
+
+section#hire-us .hire-us-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#hire-us .hire-us-text {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+section#hire-us .hire-us-content {
+    padding: 1rem 0 2rem 0;
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+}
+
+section#hire-us .hire-us-button-container {
+    margin-top: 1rem;
+}
+
+section#hire-us .hire-us-button {
+    padding: 1rem;
+    background-color: #232323;
+    color: #fff;
+    transition: 0.3s;
+}
+
+section#hire-us .hire-us-button:hover {
+    background-color: #fff;
+    color: #232323;
+}
+
+/********** FOOTER **********/
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 1rem 4rem 1rem;
+    background-color: #232323;
+}
+
+footer .logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem
+}
+
+footer .logo-container .logo-title {
+    font-size: 2rem;
+    color: rgb(192, 172, 149);
+}
+
+footer .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+footer .footer-title {
+    margin-bottom: 1rem;
+    font-size: 24px;
+    color: #fff;
+}
+
+.footer-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-contact .footer-contact-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-icon {
+    width: 16px;
+    height: 16px;
+    color: #54595F;
+}
+
+.footer-contact .footer-contact-item:hover .footer-icon, 
+.footer-contact .footer-contact-item:hover .footer-contact-text {
+    color: #fff;
+}
+
+
+.footer-contact .footer-contact-text {
+    font-size: 1rem;
+    color: #54595F;
+}
+
+.footer-service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #54595F;
+}
+
+.footer-services .footer-service-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-services .footer-service-item:hover .footer-icon,
+.footer-services .footer-service-item:hover .footer-service-text {
+    color: #fff;
+}
+
+footer .footer-media .media-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;   
+}
+
+.media-list .media-link i {
+    padding: 0.5rem;
+    background-color: #fff;
+    color: #232323;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+
+.media-list .media-link i:hover {
+    background-color: #868686;
+    cursor: pointer;
+}

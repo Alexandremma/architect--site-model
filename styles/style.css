@@ -15,8 +15,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     background-color: #fff;
-    padding: 8px;
-    height: 104px;
+    padding: 0.5rem;
+    height: 6.5rem;
 }
 
 header .logo-container {
@@ -31,12 +31,12 @@ header .logo-link {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 8px;
-    padding: 8px;
+    gap: 0.5rem;
+    padding: 0.5rem;
 }
 
 header .logo-link .logo-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: rgb(192, 172, 149);
 }
 
@@ -52,7 +52,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 16px;
+    gap: 0.5rem;
     height: 100%;
 }
 
@@ -65,7 +65,7 @@ nav {
 
 .menu-item-link {
     /* px-3 py-2 rounded-lg hover:bg-azul-escuro hover:text-white duration-200 */
-    padding: 8px 12px;
+    padding: 0.5rem 0.8rem;
     transition: 0.3s;
     font-weight: 500;
 }
@@ -105,7 +105,7 @@ section#banner-section .view-filter {
     /* flex flex-col */
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    /* gap: 1rem; */
     padding: 0 1rem;
     z-index: 9;
 }
@@ -113,11 +113,19 @@ section#banner-section .view-filter {
 #banner-section .banner-container .banner-text {
     font-size: 1rem;
     color: #C0AC95;
-    border-bottom: 2px solid #C0AC95;
-    max-width: 7.5rem;
+    /* border-bottom: 2px solid #C0AC95; */
+    /* max-width: 7.5rem; */
+}
+
+#banner-section .banner-container .decoration-line {
+    height: 2px;
+    width: 7rem;
+    margin-bottom: 0.5rem;
+    background-color: #C0AC95;
 }
 
 #banner-section .banner-container .banner-title {
+    margin-bottom: 2rem;
     font-size: 3rem;
     color: #fff;
     font-weight: 400;
@@ -199,7 +207,6 @@ section#banner-section .view-filter {
 .service-list .service-item:hover {
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.17);
     scale: 1.005;
-    transition: 0.3s;
 }
 
 .service-list .service-item.service-item-design {
@@ -392,7 +399,7 @@ section#welcome-section .welcome-text-container .welcome-list .welcome-list-item
     color: #C0AC95;
 }
 
-/* SECTION HIRE US */
+/********** SECTION HIRE US **********/
 section#hire-us {
     display: flex;
     flex-direction: column;

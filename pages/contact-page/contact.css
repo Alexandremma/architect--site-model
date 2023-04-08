@@ -15,8 +15,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     background-color: #fff;
-    padding: 8px;
-    height: 104px;
+    padding: 0.5rem;
+    height: 6.5rem;
 }
 
 header .logo-container {
@@ -31,12 +31,12 @@ header .logo-link {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 8px;
-    padding: 8px;
+    gap: 0.5rem;
+    padding: 0.5rem;
 }
 
 header .logo-link .logo-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: rgb(192, 172, 149);
 }
 
@@ -52,7 +52,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 16px;
+    gap: 0.5rem;
     height: 100%;
 }
 
@@ -65,7 +65,7 @@ nav {
 
 .menu-item-link {
     /* px-3 py-2 rounded-lg hover:bg-azul-escuro hover:text-white duration-200 */
-    padding: 8px 12px;
+    padding: 0.5rem 0.8rem;
     transition: 0.3s;
     font-weight: 500;
 }
