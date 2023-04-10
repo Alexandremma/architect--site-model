@@ -35,12 +35,16 @@ header .logo-link {
     padding: 0.5rem;
 }
 
+header .logo-link .logo-image {
+    width: 3rem;
+}
+
 header .logo-link .logo-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: rgb(192, 172, 149);
 }
 
-nav {
+header nav {
     /* flex justify-center items-center */
     display: flex;
     justify-content: center;
@@ -52,18 +56,18 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 0.5rem;
+    gap: 0.2rem;
     height: 100%;
 }
 
-.menu-item {
+.menu-list .menu-item {
     /* flex justify-center items-center */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.menu-item-link {
+.menu-list .menu-item .menu-item-link {
     /* px-3 py-2 rounded-lg hover:bg-azul-escuro hover:text-white duration-200 */
     padding: 0.5rem 0.8rem;
     font-size: 0.8rem;
@@ -71,7 +75,7 @@ nav {
     transition: 0.3s;
 }
 
-.menu-item-link:hover {
+.menu-list .menu-item .menu-item-link:hover {
     /* background-color: rgb(136, 136, 136); */
     background-color: rgb(192, 172, 149);
     color: #fff;
@@ -180,7 +184,7 @@ section#contact-section .contact-subtitle {
 }
 
 section#contact-section .contact-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
@@ -233,6 +237,7 @@ section#contact-section .contact-list .contact-item .contact-item-text .contact-
 section#contact-section .contact-form-container {
     padding: 3rem 2rem;
     background-color: #fff;
+    box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.1);
 }
 
 section#contact-section .contact-form-container .contact-form {
@@ -293,6 +298,15 @@ section#contact-section .contact-form-container .contact-form .form-button-conta
     background-color: #76634c;
 }
 
+/********** SECTION MAPS **********/
+section#maps-section {
+    padding: 2rem 0 0 0;
+}
+
+section#maps-section #maps-canvas {
+    height: 42rem;
+}
+
 /********** FOOTER **********/
 footer {
     display: flex;
@@ -309,8 +323,12 @@ footer .logo-container {
     gap: 1rem
 }
 
+footer .logo-container .logo-image {
+    width: 3rem;
+}
+
 footer .logo-container .logo-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: rgb(192, 172, 149);
 }
 

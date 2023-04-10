@@ -1,0 +1,190 @@
+/* TAILWIND BREAKPOINTS
+sm	640px	@media (min-width: 640px) { ... }
+md	768px	@media (min-width: 768px) { ... }
+lg	1024px	@media (min-width: 1024px) { ... }
+xl	1280px	@media (min-width: 1280px) { ... }
+2xl	1536px	@media (min-width: 1536px) { ... } */
+
+/* BOOTSTRAP BREAKPOINTS
+xs 480px
+sm 768px
+md 992px
+lg 1200px */
+
+@media screen and (min-width: 1024px) {
+    header {
+        padding: 0 3rem;
+    }
+
+    header .logo-link .logo-image {
+        width: 3.2rem;
+    }
+    
+    header .logo-link .logo-title {
+        font-size: 2rem;
+    }
+
+    .menu-list .menu-item .menu-item-link {
+        font-size: 1rem;
+    }
+
+    /********** SECTION BANNER **********/
+    section#banner-section {
+        height: 32rem;
+    }
+    
+    #banner-section .banner-container .banner-text {
+        font-size: 1.5rem;
+    }
+
+    #banner-section .banner-container .decoration-line {
+        width: 11rem;
+    }
+
+    #banner-section .banner-container .banner-title {
+        font-size: 4rem;
+        width: 80%;
+    }
+
+    #banner-section .banner-container .banner-link {
+        font-size: 1rem;
+    }
+
+    #our-services-section .service-list {
+        flex-direction: row;
+    }
+
+    /********** SECTION METRICS **********/
+    #metrics-section {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 6rem 4rem;
+    }
+
+    #metrics-section .metric-item {
+        padding: 0 1rem;
+    }
+
+    #metrics-section .separator {
+        width: 0.5px;
+        height: 8rem;
+        margin: 0 4rem;
+        /* background-color: red; */
+    }
+
+    /********** SECTION WELCOME **********/
+    section#welcome-section {
+        flex-direction: row;
+    }
+
+    section#welcome-section .welcome-image-container {
+        flex: 1;
+        padding: 1rem 0;
+    }
+
+    /* section#welcome-section .welcome-image-container .welcome-image {
+        width: 100%;
+        height: 100%;
+    } */
+
+    section#welcome-section .welcome-text-container {
+        flex: 1;
+        justify-content: center;
+        align-items: start;
+    }
+
+    /********** PAGE ABOUT US **********/
+    /********** SECTION ABOUT US **********/
+    section#about-us {
+        padding: 4rem 1rem;
+        gap: 2rem;
+    }
+
+    section#about-us .about-us-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    section#about-us .about-us-image {
+        height: 26rem;
+        width: 80%;
+    }
+
+    /* change here to flex-direction row */
+    section#about-us .about-us-content {
+        /* flex-direction: row; */
+        width: 80%;
+        padding-left: 10%;
+    }
+
+    section#about-us .about-us-content .about-us-subtitle {
+        font-size: 1.2rem;
+    }
+
+    section#about-us .about-us-content .about-us-title {
+        font-size: 2.5rem;
+    }
+
+    /********** SECTION DEPOSITIONS **********/
+    section#depositions .depositions-container {
+        width: 100%;
+    }
+
+    section#depositions .depositions-container .deposition-text {
+        width: 36rem;
+    }
+
+    /********** SECTION OUR TEAM **********/
+    section#our-team .our-team-header .our-team-subtitle {
+        font-size: 1.2rem;
+    }
+
+    section#our-team .our-team-header .our-team-title {
+        font-size: 2.5rem;
+    }
+
+    section#our-team .our-team-members {
+        flex-direction: row;
+        gap: 10rem;
+    }
+
+    /********** PAGE CONTACT **********/
+    /********** CONTACT SECTION **********/
+    section#contact-section {
+        flex-direction: row;
+        padding: 4rem 2rem;
+    }
+
+    section#contact-section .contact-info-container {
+        flex: 1;
+    }
+
+    section#contact-section .contact-subtitle {
+        font-size: 1.2rem;
+    }
+
+    section#contact-section .contact-title {
+        font-size: 2.5rem;
+    }
+
+    /********** SECTION FORM **********/
+    section#contact-section .contact-form-container {
+        flex: 1;
+    }
+
+    section#contact-section .contact-form-container .contact-form .form-group {
+        flex-direction: row;
+    }
+
+    /********** FOOTER **********/
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer .logo-container {
+        align-items: start;
+    }
+}

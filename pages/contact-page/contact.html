@@ -7,7 +7,10 @@
         <title>Arquiteto - Contato</title>
 
         <!-- Contact Page Customized Style -->
-        <link rel="stylesheet" href="./contact.css">
+        <link rel="stylesheet" href="./../../styles/contact.css">
+
+        <!-- Responsive Style -->
+        <link rel="stylesheet" href="./../../styles/media-queries.css">
 
         <!-- Barlow Condensed Font - Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,12 +22,18 @@
         
         <!-- TailWind Script -->
         <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Google Maps API Script -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlf_yeki4e-GU1g062g4q4K_AnqxBvNAo"></script>
+
+        <!-- Customized Maps API Script -->
+        <script type="text/javascript" src="./../../scripts/google-maps-api.js"></script>
     </head>
-    <body>
+    <body onload="initialize()">
         <header>
             <div class="logo-container">
                 <a class="logo-link" href="./../../index.html">
-                    <img width="56px" src="./../../assets/compressed-img/architect-color.png" alt="logo">
+                    <img class="logo-image" src="./../../assets/compressed-img/architect-color.png" alt="logo">
                     <h2 class="logo-title">Arquiteto</h2>
                 </a>
             </div>
@@ -105,10 +114,15 @@
                 </form>
             </div>
         </section>
+
+        <section id="maps-section">
+            <div id="maps-canvas">
+            </div>
+        </section>
         
         <footer>
             <div class="logo-container">
-                <img width="48px" src="../../assets/compressed-img/architect-color.png" alt="logo">
+                <img class="logo-image" src="../../assets/compressed-img/architect-color.png" alt="logo">
                 <h2 class="logo-title">Arquiteto</h2>
             </div>
 

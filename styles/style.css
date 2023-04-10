@@ -35,12 +35,16 @@ header .logo-link {
     padding: 0.5rem;
 }
 
+header .logo-link .logo-image {
+    width: 3rem;
+}
+
 header .logo-link .logo-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: rgb(192, 172, 149);
 }
 
-nav {
+header nav {
     /* flex justify-center items-center */
     display: flex;
     justify-content: center;
@@ -52,18 +56,18 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 0.5rem;
+    gap: 0.2rem;
     height: 100%;
 }
 
-.menu-item {
+.menu-list .menu-item {
     /* flex justify-center items-center */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.menu-item-link {
+.menu-list .menu-item .menu-item-link {
     /* px-3 py-2 rounded-lg hover:bg-azul-escuro hover:text-white duration-200 */
     padding: 0.5rem 0.8rem;
     font-size: 0.8rem;
@@ -71,7 +75,7 @@ nav {
     transition: 0.3s;
 }
 
-.menu-item-link:hover {
+.menu-list .menu-item .menu-item-link:hover {
     /* background-color: rgb(136, 136, 136); */
     background-color: rgb(192, 172, 149);
     color: #fff;
@@ -142,8 +146,10 @@ section#banner-section .view-filter {
     width: 120px;
     background-color: #C0AC95;
     font-weight: 500;
+    font-size: 1rem;
     color: #fff;
     transition: 0.3s;
+    text-transform: uppercase;
 }
 
 #banner-section .banner-container .banner-link:hover {
@@ -157,7 +163,7 @@ section#banner-section .view-filter {
     padding: 2rem 1rem;
 }
 
-.our-services-header {
+#our-services-section .our-services-header {
     /* flex flex-col justify-center items-center */
     display: flex;
     flex-direction: column;
@@ -167,31 +173,31 @@ section#banner-section .view-filter {
     padding: 0 0 1rem 0;
 }
 
-.our-services-header .decoration-line {
+#our-services-section .our-services-header .decoration-line {
     height: 2px;
     width: 2.5rem;
     background-color: #C0AC95;
 }
 
-.our-services-header .our-services-text {
+#our-services-section .our-services-header .our-services-text {
     text-transform: uppercase;
     font-size: 1rem;
     color: #C0AC95;
 }
 
-.our-services-header .our-services-title {
+#our-services-section .our-services-header .our-services-title {
     text-transform: uppercase;
     font-size: 2.5rem;
     line-height: 1.2em;
 }
 
-.service-list {
+#our-services-section .service-list {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.service-list .service-item {
+#our-services-section .service-list .service-item {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -205,37 +211,37 @@ section#banner-section .view-filter {
     transition: 0.3s;
 }
 
-.service-list .service-item:hover {
+#our-services-section .service-list .service-item:hover {
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.17);
     scale: 1.005;
 }
 
-.service-list .service-item.service-item-design {
+#our-services-section .service-list .service-item.service-item-design {
     transition: 0.3s;
 }
 
-.service-list .service-item.service-item-design:hover {
+#our-services-section .service-list .service-item.service-item-design:hover {
     background-image: url(../assets/compressed-img/design-plant.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
 }
 
-.service-list .service-item.service-item-arch:hover {
+#our-services-section .service-list .service-item.service-item-arch:hover {
     background-image: url(../assets/compressed-img/building.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
 }
 
-.service-list .service-item.service-item-measure:hover {
+#our-services-section .service-list .service-item.service-item-measure:hover {
     background-image: url(../assets/compressed-img/pencil-project.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
 }
 
-.service-list .service-item .service-view {
+#our-services-section .service-list .service-item .service-view {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -245,7 +251,7 @@ section#banner-section .view-filter {
     transition: 0.3s;
 }
 
-.service-list .service-item .view-filter {
+#our-services-section .service-list .service-item .view-filter {
     display: none;
     position: absolute;
     height: 100%;
@@ -257,7 +263,7 @@ section#banner-section .view-filter {
     transition: 0.3s;
 }
 
-.service-list .service-item:hover .view-filter {
+#our-services-section .service-list .service-item:hover .view-filter {
     display: block;
 }
 
@@ -314,28 +320,29 @@ section#banner-section .view-filter {
 }
 
 .metric-item .metric-svg {
-    width: 56px;
-    height: 56px;
+    width: 4rem;
+    height: 4rem;
 }
 
 .metric-item .metric-number {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .metric-item .metric-name {
-    font-weight: 300;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 1rem;
     letter-spacing: 1.6px;
     color: #868686;
+    text-align: center;
 }
 
 #metrics-section .separator {
     width: 100%;
-    background-color: #343434;
     height: 0.5px;
+    background-color: #343434;
 }
 
-/* SECTION WELCOME */
+/********** SECTION WELCOME **********/
 section#welcome-section {
     display: flex;
     flex-direction: column;
@@ -343,7 +350,14 @@ section#welcome-section {
     padding: 6rem 1rem;
 }
 
+section#welcome-section .welcome-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 section#welcome-section .welcome-image-container .welcome-image {
+    width: 100%;
     height: 22rem;
 }
 
@@ -423,16 +437,16 @@ section#hire-us .hire-us-text {
 }
 
 section#hire-us .hire-us-content {
-    padding: 1rem 0 2rem 0;
+    padding: 1.5rem 2rem;
     font-size: 2.2rem;
     text-align: center;
     text-transform: uppercase;
     line-height: 2.5rem;
 }
 
-section#hire-us .hire-us-button-container {
-    margin-top: 1rem;
-}
+/* section#hire-us .hire-us-button-container {
+    margin-top: 0.5rem;
+} */
 
 section#hire-us .hire-us-button {
     padding: 1rem;
@@ -462,8 +476,12 @@ footer .logo-container {
     gap: 1rem
 }
 
+footer .logo-container .logo-image {
+    width: 3rem;
+}
+
 footer .logo-container .logo-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: rgb(192, 172, 149);
 }
 
@@ -547,3 +565,17 @@ footer .footer-media .media-list {
     background-color: #868686;
     cursor: pointer;
 }
+
+
+/* animation-duration: 1.25s */
+/* animation-name: fadeInUp */
+/* animation-fill-mode: both */
+/* 0% {
+    opacity: 0;
+    transform: translate3d(0,100%,0);
+}
+
+100% {
+    opacity: 1;
+    trasnform: none;
+} */
