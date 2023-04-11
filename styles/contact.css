@@ -253,7 +253,7 @@ section#contact-section .contact-form-container .contact-form .form-group {
 }
 
 section#contact-section .contact-form-container .contact-form .form-group input {
-    height: 50px;
+    height: 2rem;
     padding: 1rem;
     border: 1px solid #878787;
     flex: 1;
@@ -265,6 +265,12 @@ section#contact-section .contact-form-container .contact-form .form-group input:
     outline: 1px solid #c0ac95;
 }
 
+section#contact-section .contact-form-container .contact-form .form-group input::placeholder {
+    font-size: 1rem;
+    font-family: 'Barlow Condensed', serif;
+    color: #9f9c9c;
+}
+
 section#contact-section .contact-form-container .contact-form .form-textarea-group {
     display: flex;
 }
@@ -273,6 +279,12 @@ section#contact-section .contact-form-container .contact-form .form-textarea-gro
     flex: 1;
     padding: 1rem;
     border: 1px solid #878787;
+}
+
+section#contact-section .contact-form-container .contact-form .form-textarea-group .form-textarea::placeholder {
+    font-size: 1rem;
+    font-family: 'Barlow Condensed', serif;
+    color: #9f9c9c;
 }
 
 section#contact-section .contact-form-container .contact-form .form-textarea-group .form-textarea:hover,
@@ -286,16 +298,18 @@ section#contact-section .contact-form-container .contact-form .form-button-conta
     justify-content: start;
 }
 
-section#contact-section .contact-form-container .contact-form .form-button-container .form-submit-button {
+section#contact-section .contact-form-container .contact-form .form-button-container #form-submit-button {
     padding: 1rem 1.5rem;
     background-color: #C0AC95;
-    color: #fff;
+    color: #fff !important;
+    font-weight: 700;
     text-transform: uppercase;
     transition: 0.3s;
 }
 
-section#contact-section .contact-form-container .contact-form .form-button-container .form-submit-button:hover {
+section#contact-section .contact-form-container .contact-form .form-button-container #form-submit-button:hover {
     background-color: #76634c;
+    cursor: pointer;
 }
 
 /********** SECTION MAPS **********/
@@ -411,4 +425,100 @@ footer .footer-media .media-list {
 .media-list .media-link i:hover {
     background-color: #868686;
     cursor: pointer;
+}
+
+/********** MODAL **********/
+#modal-container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    background-color: rgb(0, 0, 0, 0.7);
+    z-index: 9;
+    transition: 0.3s;
+}
+
+#modal-container.hide {
+    opacity: 0;
+    z-index: -1;
+}
+
+/* #modal-container.active-modal {
+    display: flex;
+    opacity: 1;
+    z-index: 9;
+    align-items: center;
+} */
+
+#modal-container #modal {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 32rem;
+    width: 85%;
+    /* height: 30vh; */
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 1.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+#modal-container #modal .modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#modal-container #modal .modal-header .modal-icon {
+    color: #04AA0D;
+    font-size: 2rem;
+}
+
+#modal-container #modal .modal-header .modal-title {
+    font-size: 1.5rem;
+}
+
+#modal-container #modal .modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#modal-container #modal .modal-body .modal-body-content {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#modal-container #modal .modal-body .modal-body-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+
+#modal-container #modal .modal-body .modal-body-buttons .modal-button {
+    padding: 10px 16px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#modal-container #modal .modal-body .modal-body-buttons .modal-button:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+#modal-container #modal .modal-body .modal-body-buttons .modal-cancel-button {
+    background-color: #DC2626;
+}
+
+#modal-container #modal .modal-body .modal-body-buttons .modal-ok-button {
+    background-color: #04AA0D;
 }

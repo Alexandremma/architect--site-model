@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Arquiteto - Contato</title>
 
+        <!-- Global Customized Style -->
+        <link rel="stylesheet" href="./../../styles/global.css">
+        
         <!-- Contact Page Customized Style -->
         <link rel="stylesheet" href="./../../styles/contact.css">
 
@@ -16,12 +19,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;500;700&display=swap" rel="stylesheet">
-
+        
         <!-- FontAwesome Script -->
         <script src="https://kit.fontawesome.com/3388c38173.js" crossorigin="anonymous"></script>
-        
-        <!-- TailWind Script -->
-        <script src="https://cdn.tailwindcss.com"></script>
 
         <!-- Google Maps API Script -->
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlf_yeki4e-GU1g062g4q4K_AnqxBvNAo"></script>
@@ -109,7 +109,7 @@
                         <textarea class="form-textarea" name="" id="" cols="30" rows="10" placeholder="Digite Sua Mensagem"></textarea>
                     </div>
                     <div class="form-button-container">
-                        <button class="form-submit-button" type="submit">Enviar Mensagem</button>
+                        <a id="form-submit-button" type="submit">Enviar Mensagem</a>
                     </div>
                 </form>
             </div>
@@ -196,5 +196,26 @@
                 </div>
             </div>
         </footer>
+
+        <div id="modal-container" class="hide">
+            <div id="modal">
+                <div class="modal-header">
+                    <i class="modal-icon fa-regular fa-circle-check"></i>
+                    <h2 class="modal-title">Título do Modal</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, labore. A, molestiae minus, magnam quidem, quaerat iusto quasi quis fugit est.</p>
+                    </div>
+                    <div class="modal-body-buttons">
+                        <button id="modal-cancel-button" class="modal-button modal-cancel-button">Cancelar</button>
+                        <button id="modal-ok-button" class="modal-button modal-ok-button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Script -->
+        <script src="./../../scripts/modal-script.js"></script>
     </body>
 </html>

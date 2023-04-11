@@ -7,6 +7,9 @@
         <title>Arquiteto - Home</title>
 
         <!-- Global Customized Style -->
+        <link rel="stylesheet" href="./styles/global.css">
+
+        <!-- Home Page Customized Style -->
         <link rel="stylesheet" href="./styles/style.css">
 
         <!-- Responsive Style -->
@@ -19,44 +22,6 @@
 
         <!-- FontAwesome Script -->
         <script src="https://kit.fontawesome.com/3388c38173.js" crossorigin="anonymous"></script>
-        
-        <!-- TailWind Script -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        backgroundImage: {
-                            'architect-home': "url('./assets/img/')"
-                        },
-                        colors: {
-                            azul: {
-                                claro: '#C5DFFF',
-                                escuro: '#061E3C',
-                                hover: '#1057B0'
-                            }
-                        },
-                        fontFamily: {
-                            inter: ['Inter', 'sans-serif']
-                        },
-                        keyframes: {
-                            sino_kf: {
-                                '0%, 100%': {
-                                    transform: 'rotate(-10deg)'
-                                },
-                                '50%': {
-                                    transform: 'rotate(10deg)'
-                                }
-                            }
-                        },
-                        animation: {
-                            sino: 'sino_kf 0.31s ease-in-out infinite'
-                        }
-                    }
-                    
-                }
-            }
-        </script>
     </head>
     <body>
         <header>

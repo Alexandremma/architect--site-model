@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Barlow Condensed', serif !important;
+    background-color: rgb(246, 246, 246);
+}
+
+a {
+    text-decoration: none;
+    color: #232323;
+}
+
+button {
+    outline: none;
+    border: none;
+}
