@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Arquiteto - Home</title>
 
+        <!-- Browser Tab Icon -->
+        <link rel="icon" href="./assets/img/arch-icon.png">
+
         <!-- Global Customized Style -->
         <link rel="stylesheet" href="./styles/global.css">
 
@@ -25,255 +28,297 @@
 
         <!-- Animation Librarie Style -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- https://github.com/michalsnik/aos -->
 
         <!-- FontAwesome Script -->
         <script src="https://kit.fontawesome.com/3388c38173.js" crossorigin="anonymous"></script>
     </head>
-    <body>
-        <header>
-            <div class="logo-container" data-aos="fade-up">
-                <a class="logo-link" href="./index.html">
-                    <!-- <i class="fa-duotone fa-archway"></i> -->
+    <body onload="loadingPage()">
+        <div id="preload" class="preload">
+            <!-- <i class="preload-icon-1 fa-solid fa-spinner"></i> -->
+            <!-- <i class="preload-icon-2 fa-solid fa-archway"></i> -->
+            <img class="preload-icon" src="./assets/img/arch-icon.png" alt="ícone">
+        </div>
+        <div id="loaded" class="loaded">
+            <header>
+                <div class="logo-container" data-aos="fade-right">
+                    <a class="logo-link" href="./index.html">
+                        <!-- <i class="fa-duotone fa-archway"></i> -->
+                        <img class="logo-image" src="./assets/compressed-img/architect-color.png" alt="logo">
+                        <h2 class="logo-title">Arquiteto</h2>
+                    </a>
+                </div>
+                <nav data-aos="fade-left">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a class="menu-item-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item-link" href="./pages/about-page/about.html">Sobre Nós</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item-link" href="./pages/contact-page/contact.html">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+    
+            <section id="banner-section" data-aos="fade-up">
+                <div class="view-filter" data-aos="fade-up"></div>
+                <div class="banner-container" data-aos="fade-up">
+                    <p class="banner-text">Nós vamos construir</p>
+                    <div class="decoration-line"></div>
+                    <h2 class="banner-title">O NOVO FUTURO DA ARQUITETURA</h2>
+                    <a class="banner-link" href="./pages/about-page/about.html">Saiba mais</a>
+                </div>
+            </section>
+    
+            <section id="our-services-section">
+                <div class="our-services-header" data-aos="fade-right">
+                    <div class="decoration-line"></div>
+                    <p class="our-services-text">Nossos Serviços</p>
+                    <h2 class="our-services-title">O QUE ESTAMOS OFERECENDO</h2>
+                </div>
+                <div class="service-list">
+                    <div class="service-item service-item-design" data-aos="fade-up">
+                        <div class="background-image"></div>
+                        <div class="view-filter"></div>
+                        <div class="service-view">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="service-svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
+                            </svg>
+                            <h4 class="service-title">Design de Interior</h4>
+                            <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non dolorem magnam hic dicta eaque sint numquam minima modi quas.</p>
+                            <a class="service-link">Saiba mais +</a>
+                        </div>
+                    </div>
+    
+                    <div class="service-item service-item-arch" data-aos="fade-up">
+                        <div class="background-image"></div>
+                        <div class="view-filter"></div>
+                        <div class="service-view">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="service-svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
+                            </svg>                      
+                            <h4 class="service-title">Arquitetura</h4>
+                            <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non dolorem magnam hic dicta eaque sint numquam minima modi quas.</p>
+                            <a class="service-link">Saiba mais +</a>
+                        </div>
+                    </div>
+    
+                    <div class="service-item service-item-measure" data-aos="fade-up">
+                        <div class="background-image"></div>
+                        <div class="view-filter"></div>
+                        <div class="service-view">
+                            <i class="fa-sharp fa-solid fa-ruler-combined service-icon"></i>
+                            <h4 class="service-title">Design e Medidas</h4>
+                            <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non dolorem magnam hic dicta eaque sint numquam minima modi quas.</p>
+                            <a class="service-link">Saiba mais +</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="metrics-section" data-aos="fade-up">
+                <div class="metric-item" data-aos="fade-up">
+                    <!-- <i></i> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="metric-svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                    <div class="metric-number-container">
+                        <span class="metric-number" data-val="560" data-aos="fade-up" data-aos-id="super-duper">000</span>
+                    </div>               
+                    <p class="metric-name">Designs Modernos</p>
+                </div>
+    
+                <div class="separator" data-aos="fade-up"></div>
+    
+                <div class="metric-item" data-aos="fade-up">
+                    <!-- <i></i> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="metric-svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
+                    </svg>
+                    <div class="metric-number-container">
+                        <span class="metric-number" data-val="354" data-aos-id="super-duper">000</span>
+                    </div>           
+                    <p class="metric-name">Projetos Completos</p>
+                </div>
+    
+                <div class="separator" data-aos="fade-up"></div>
+    
+                <div class="metric-item" data-aos="fade-up">
+                    <!-- <i></i> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="metric-svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                    </svg>
+                    <div class="metric-number-container">
+                        <span class="metric-number" data-val="695" data-aos-id="super-duper">000</span>
+                    </div>             
+                    <p class="metric-name">Clientes Satisfeitos</p>
+                </div>
+    
+                <div class="separator" data-aos="fade-up"></div>
+    
+                <div class="metric-item" data-aos="fade-up">
+                    <!-- <i></i> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="metric-svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75" />
+                    </svg>
+                    <div class="metric-number-container">
+                        <span class="metric-number" data-val="260" data-aos-id="super-duper">000</span>
+                    </div> 
+                    <p class="metric-name">Alvarás de Construção</p>
+                </div>
+            </section>
+    
+            <section id="welcome-section">
+                <div class="welcome-image-container" data-aos="fade-up">
+                    <img class="welcome-image" src="./assets/compressed-img/arch-plan.jpg" alt="Materiais de Arquitetura">
+                </div>
+                <div class="welcome-text-container" data-aos="fade-up">
+                    <div class="decoration-line"></div>
+                    <p class="welcome-text-secondary">Bem-vindo a nossa agência</p>
+                    <h2 class="welcome-text-title">Os Mais Experientes Arquitetos e Designers</h2>
+                    <p class="welcome-text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, et eos autem nulla quas tempora officia cumque commodi inventore reiciendis laudantium sunt sed dolores sapiente itaque eligendi est incidunt nemo.</p>
+                    <ul class="welcome-list">
+                        <li class="welcome-list-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span class="welcome-item-text">Lorem Ipsum is not simply random text</span>
+                        </li>
+                        <li class="welcome-list-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span class="welcome-item-text">Consectetur notted adipisicing elit</span>
+                        </li>
+                        <li class="welcome-list-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span class="welcome-item-text">Injected humou or randomised simply not wisdome</span>
+                        </li>
+                        <li class="welcome-list-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span class="welcome-item-text">Perspiciatis, et eos autem nulla quas tempora</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+    
+            <section id="hire-us" data-aos="fade-up">
+                <div class="hire-us-text-container">
+                    <p class="hire-us-text" data-aos="fade-up">Contratar para novos projetos</p>
+                    <h2 class="hire-us-content" data-aos="fade-up">Faça o plano do seu Projeto Arquitetônico agora</h2>
+                </div>
+                <div class="hire-us-button-container" data-aos="fade-up">
+                    <a class="hire-us-button" href="./pages/contact-page/contact.html">Entre em Contato</a>
+                </div>
+            </section>
+    
+            <footer data-aos="fade-up">
+                <div class="logo-container" data-aos="fade-up">
                     <img class="logo-image" src="./assets/compressed-img/architect-color.png" alt="logo">
                     <h2 class="logo-title">Arquiteto</h2>
-                </a>
-            </div>
-            <nav data-aos="fade-up">
-                <ul class="menu-list">
-                    <li class="menu-item">
-                        <a class="menu-item-link" href="./index.html">Home</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-item-link" href="./pages/about-page/about.html">Sobre Nós</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-item-link" href="./pages/contact-page/contact.html">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <section id="banner-section">
-            <div class="view-filter"></div>
-            <div class="banner-container">
-                <p class="banner-text" data-aos="fade-up">Nós vamos construir</p>
-                <div class="decoration-line" data-aos="fade-up"></div>
-                <h2 class="banner-title" data-aos="fade-up">O NOVO FUTURO DA ARQUITETURA</h2>
-                <a class="banner-link" href="./pages/about-page/about.html" data-aos="fade-up">Saiba mais</a>
-            </div>
-        </section>
-
-        <section id="our-services-section">
-            <div class="our-services-header">
-                <div class="decoration-line"></div>
-                <p class="our-services-text">Nossos Serviços</p>
-                <h2 class="our-services-title">O QUE ESTAMOS OFERECENDO</h2>
-            </div>
-            <div class="service-list">
-                <div class="service-item service-item-design" data-aos="fade">
-                    <div class="background-image"></div>
-                    <div class="view-filter"></div>
-                    <div class="service-view">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="service-svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
-                        </svg>
-                        <h4 class="service-title">Design de Interior</h4>
-                        <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non dolorem magnam hic dicta eaque sint numquam minima modi quas.</p>
-                        <a class="service-link">Saiba mais +</a>
+                </div>
+    
+                <div class="footer-contact" data-aos="fade-up">
+                    <h5 class="footer-title">Contato</h5>
+                    <div class="footer-contact-list">
+                        <div class="footer-contact-item">
+                            <!-- <i></i> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="footer-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                            </svg>                      
+                            <p class="footer-contact-text">(44) 9 9999-9999</p>
+                        </div>
+                        <div class="footer-contact-item">
+                            <!-- <i></i> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="footer-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                            </svg>                      
+                            <p class="footer-contact-text">contact@suaempresa.com.br</p>
+                        </div>
+                        <div class="footer-contact-item">
+                            <!-- <i></i> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="footer-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>                      
+                            <p class="footer-contact-text">Avenida Sua Empresa, Número 999, Cidade - UF</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="service-item service-item-arch" data-aos="fade">
-                    <div class="background-image"></div>
-                    <div class="view-filter"></div>
-                    <div class="service-view">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="service-svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
-                        </svg>                      
-                        <h4 class="service-title">Arquitetura</h4>
-                        <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non dolorem magnam hic dicta eaque sint numquam minima modi quas.</p>
-                        <a class="service-link">Saiba mais +</a>
+    
+                <div class="footer-services" data-aos="fade-up">
+                    <h5 class="footer-title">Serviços</h5>
+                    <div class="footer-service-list">
+                        <div class="footer-service-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="footer-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>                          
+                            <p class="footer-service-text">Design de Interior</p>
+                        </div>
+                        <div class="footer-service-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="footer-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                            <p class="footer-service-text">Arquitetura</p>
+                        </div>
+                        <div class="footer-service-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="footer-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                            <p class="footer-service-text">Design e Medidas</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="service-item service-item-measure" data-aos="fade">
-                    <div class="background-image"></div>
-                    <div class="view-filter"></div>
-                    <div class="service-view">
-                        <i class="fa-sharp fa-solid fa-ruler-combined service-icon"></i>
-                        <h4 class="service-title">Design e Medidas</h4>
-                        <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non dolorem magnam hic dicta eaque sint numquam minima modi quas.</p>
-                        <a class="service-link">Saiba mais +</a>
+    
+                <div class="footer-media" data-aos="fade-up">
+                    <h5 class="footer-title">Siga-nos</h5>
+                    <div class="media-list">
+                        <a class="media-link" href="" tooltip="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a class="media-link" href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a class="media-link" href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="media-link" href="">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
                     </div>
                 </div>
-            </div>
-        </section>
+            </footer>
+        </div>
 
-        <section id="metrics-section">
-            <div class="metric-item" data-aos="fade-up">
-                <!-- <i></i> -->
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="metric-svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-                </svg>                  
-                <p class="metric-number">5,600</p>
-                <p class="metric-name">Designs Modernos</p>
-            </div>
+        <!-- Home Customized Script -->
+        <script src="./scripts/global.js"></script>
 
-            <div class="separator" data-aos="fade-up"></div>
-
-            <div class="metric-item" data-aos="fade-up">
-                <!-- <i></i> -->
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="metric-svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
-                </svg>                  
-                <p class="metric-number">3,550</p>
-                <p class="metric-name">Projetos Completos</p>
-            </div>
-
-            <div class="separator" data-aos="fade-up"></div>
-
-            <div class="metric-item" data-aos="fade-up">
-                <!-- <i></i> -->
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="metric-svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-                </svg>                  
-                <p class="metric-number">8,292</p>
-                <p class="metric-name">Clientes Satisfeitos</p>
-            </div>
-
-            <div class="separator" data-aos="fade-up"></div>
-
-            <div class="metric-item" data-aos="fade-up">
-                <!-- <i></i> -->
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="metric-svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75" />
-                </svg>                               
-                <p class="metric-number">2,600</p>
-                <p class="metric-name">Alvarás de Construção</p>
-            </div>
-        </section>
-
-        <section id="welcome-section">
-            <div class="welcome-image-container" data-aos="fade-up">
-                <img class="welcome-image" src="./assets/compressed-img/arch-plan.jpg" alt="Materiais de Arquitetura">
-            </div>
-            <div class="welcome-text-container" data-aos="fade-up">
-                <div class="decoration-line"></div>
-                <p class="welcome-text-secondary">Bem-vindo a nossa agência</p>
-                <h2 class="welcome-text-title">Os Mais Experientes Arquitetos e Designers</h2>
-                <p class="welcome-text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, et eos autem nulla quas tempora officia cumque commodi inventore reiciendis laudantium sunt sed dolores sapiente itaque eligendi est incidunt nemo.</p>
-                <ul class="welcome-list">
-                    <li class="welcome-list-item">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <span class="welcome-item-text">Lorem Ipsum is not simply random text</span>
-                    </li>
-                    <li class="welcome-list-item">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <span class="welcome-item-text">Consectetur notted adipisicing elit</span>
-                    </li>
-                    <li class="welcome-list-item">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <span class="welcome-item-text">Injected humou or randomised simply not wisdome</span>
-                    </li>
-                    <li class="welcome-list-item">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <span class="welcome-item-text">Perspiciatis, et eos autem nulla quas tempora</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="hire-us">
-            <div class="hire-us-text-container">
-                <p class="hire-us-text" data-aos="fade-up">Contratar para novos projetos</p>
-                <h2 class="hire-us-content" data-aos="fade-up">Faça o plano do seu Projeto Arquitetônico agora</h2>
-            </div>
-            <div class="hire-us-button-container" data-aos="fade-up">
-                <a class="hire-us-button" href="./pages/contact-page/contact.html">Entre em Contato</a>
-            </div>
-        </section>
-
-        <footer>
-            <div class="logo-container" data-aos="fade-up">
-                <img class="logo-image" src="./assets/compressed-img/architect-color.png" alt="logo">
-                <h2 class="logo-title">Arquiteto</h2>
-            </div>
-
-            <div class="footer-contact" data-aos="fade-up">
-                <h5 class="footer-title" data-aos="fade-up">Contato</h5>
-                <div class="footer-contact-list" data-aos="fade-up">
-                    <div class="footer-contact-item">
-                        <!-- <i></i> -->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="footer-icon">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                        </svg>                      
-                        <p class="footer-contact-text">(44) 9 9999-9999</p>
-                    </div>
-                    <div class="footer-contact-item">
-                        <!-- <i></i> -->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="footer-icon">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                        </svg>                      
-                        <p class="footer-contact-text">contact@suaempresa.com.br</p>
-                    </div>
-                    <div class="footer-contact-item">
-                        <!-- <i></i> -->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="footer-icon">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                        </svg>                      
-                        <p class="footer-contact-text">Avenida Sua Empresa, Número 999, Cidade - UF</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-services" data-aos="fade-up">
-                <h5 class="footer-title">Serviços</h5>
-                <div class="footer-service-list">
-                    <div class="footer-service-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="footer-icon">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg>                          
-                        <p class="footer-service-text">Design de Interior</p>
-                    </div>
-                    <div class="footer-service-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="footer-icon">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg>
-                        <p class="footer-service-text">Arquitetura</p>
-                    </div>
-                    <div class="footer-service-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="footer-icon">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg>
-                        <p class="footer-service-text">Design e Medidas</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-media" data-aos="fade-up">
-                <h5 class="footer-title">Siga-nos</h5>
-                <div class="media-list">
-                    <a class="media-link" href="" tooltip="Facebook">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a class="media-link" href="">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a class="media-link" href="">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a class="media-link" href="">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-        </footer>
+        <!-- Home Customized Script -->
+        <script src="./scripts/home.js"></script>
 
         <!-- Animation Librarie Script -->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-          AOS.init();
+          AOS.init({
+            // Global settings:
+            // disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            // startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            // initClassName: 'aos-init', // class applied after initialization
+            // animatedClassName: 'aos-animate', // class applied on animation
+            // useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            // disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            // debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            // throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+            
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            // offset: 120, // offset (in px) from the original trigger point
+            // delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1500, // values from 0 to 3000, with step 50ms
+            // easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            // mirror: false, // whether elements should animate out while scrolling past them
+            // anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+          });
         </script>
     </body>
 </html>

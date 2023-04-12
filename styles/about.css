@@ -94,7 +94,8 @@ section#banner-section {
     background-image: url('./../../assets/compressed-img/squad.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left center;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 section#banner-section .view-filter {
@@ -238,6 +239,7 @@ section#depositions .depositions-container {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
 }
 
 section#depositions .depositions-container .deposition-text {

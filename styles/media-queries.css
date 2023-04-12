@@ -153,6 +153,7 @@ lg 1200px */
     /********** SECTION DEPOSITIONS **********/
     section#depositions .depositions-container {
         width: 100%;
+        height: 28rem;
     }
 
     section#depositions .depositions-container .deposition-text {

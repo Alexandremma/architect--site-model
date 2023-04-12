@@ -18,3 +18,40 @@ button {
     outline: none;
     border: none;
 }
+
+.preload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(214, 196, 177, 0.414);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.preload .preload-icon {
+    width: 4.5rem;
+    animation: flashScale 1.8s linear infinite;
+}
+
+.preload .preload-icon-1 {
+    color: #b69e85;
+    font-size: 4rem;
+    text-shadow: 0 0 3px #000;
+    animation: rotateAll 1s linear infinite;
+}
+
+.preload .preload-icon-2 {
+    color: #b69e85;
+    font-size: 4rem;
+    text-shadow: 0 0 3px #000;
+    animation: flashScale 1.8s linear infinite;
+}
+
+.loaded {
+    display: none;
+}

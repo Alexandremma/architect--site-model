@@ -90,6 +90,7 @@ section#banner-section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+    background-attachment: fixed;
 }
 
 section#banner-section .view-filter {
