@@ -12,7 +12,7 @@
         <!-- Contact Page Customized Style -->
         <link rel="stylesheet" href="./../../styles/contact.css">
 
-        <!-- Responsive Style -->
+        <!-- Responsive Customized Style -->
         <link rel="stylesheet" href="./../../styles/media-queries.css">
 
         <!-- Barlow Condensed Font - Google Fonts -->
@@ -20,6 +20,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;500;700&display=swap" rel="stylesheet">
         
+        <!-- Animation Librarie Style -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
         <!-- FontAwesome Script -->
         <script src="https://kit.fontawesome.com/3388c38173.js" crossorigin="anonymous"></script>
 
@@ -32,12 +35,12 @@
     <body onload="initialize()">
         <header>
             <div class="logo-container">
-                <a class="logo-link" href="./../../index.html">
+                <a class="logo-link" href="./../../index.html" data-aos="fade-up">
                     <img class="logo-image" src="./../../assets/compressed-img/architect-color.png" alt="logo">
                     <h2 class="logo-title">Arquiteto</h2>
                 </a>
             </div>
-            <nav class="">
+            <nav data-aos="fade-up">
                 <ul class="menu-list">
                     <li class="menu-item">
                         <a class="menu-item-link" href="./../../index.html">Home</a>
@@ -56,34 +59,34 @@
             <div class="view-filter"></div>
             <div class="banner-container">
                 <!-- <p class="banner-text">Nós vamos construir</p> -->
-                <h2 class="banner-title">CONTATO</h2>
-                <p class="banner-subtitle">Agende uma reunião com a nossa equipe</p>
+                <h2 class="banner-title" data-aos="fade-up">CONTATO</h2>
+                <p class="banner-subtitle" data-aos="fade-up">Agende uma reunião com a nossa equipe</p>
                 <!-- <a class="banner-link">Agende uma reunião com a nossa equipe</a> -->
             </div>
         </section>
 
         <section id="contact-section">
             <div class="contact-info-container">
-                <div class="decoration-line"></div>
-                <p class="contact-subtitle">Contate-nos a qualquer hora</p>
-                <h2 class="contact-title">Entre em contato conosco</h2>
-                <p class="contact-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio cumque nesciunt velit, voluptates consequatur rerum voluptatum eos quis totam! Eum corporis minus praesentium quibusdam odio dolores nesciunt earum doloribus veniam?</p>
+                <div class="decoration-line" data-aos="fade-up"></div>
+                <p class="contact-subtitle" data-aos="fade-up">Contate-nos a qualquer hora</p>
+                <h2 class="contact-title" data-aos="fade-up">Entre em contato conosco</h2>
+                <p class="contact-description" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio cumque nesciunt velit, voluptates consequatur rerum voluptatum eos quis totam! Eum corporis minus praesentium quibusdam odio dolores nesciunt earum doloribus veniam?</p>
                 <div class="contact-list">
-                    <div class="contact-item">
+                    <div class="contact-item" data-aos="fade-up">
                         <i class="contact-item-icon fa-solid fa-phone-volume"></i>
                         <div class="contact-item-text">
                             <span class="contact-item-label">Telefone</span>
                             <span class="contact-item-info">(00) 9 9999-9999</span>
                         </div>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item" data-aos="fade-up">
                         <i class="contact-item-icon fa-solid fa-envelope"></i>
                         <div class="contact-item-text">
                             <span class="contact-item-label">Mande um E-mail</span>
                             <span class="contact-item-info">suporte@suaempresa.com</span>
                         </div>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item" data-aos="fade-up">
                         <i class="contact-item-icon fa-solid fa-location-dot"></i>
                         <div class="contact-item-text">
                             <span class="contact-item-label">Visite nosso escritório</span>
@@ -97,36 +100,36 @@
                     <div class="form-group">
                         <!-- <div style="position: relative;"> -->
                             <!-- <i class="fa-solid fa-user" style="position: absolute; top: 0; left: 0;"></i> -->
-                            <input class="form-input" type="text" placeholder="Digite Seu Nome">
+                            <input class="form-input" type="text" placeholder="Digite Seu Nome" data-aos="fade-up">
                         <!-- </div> -->
-                        <input class="form-input" type="email" name="" id="" placeholder="Digite Seu E-mail">
+                        <input class="form-input" type="email" name="" id="" placeholder="Digite Seu E-mail" data-aos="fade-up">
                     </div>
-                    <div class="form-group">
-                        <input class="form-input" type="text" placeholder="Digite O Assunto">
-                        <input class="form-input" type="tel" name="" id="" placeholder="Digite Seu Telefone">
+                    <div class="form-group" data-aos="fade-up">
+                        <input class="form-input" type="text" placeholder="Digite O Assunto" data-aos="fade-up">
+                        <input class="form-input" type="tel" name="" id="" placeholder="Digite Seu Telefone" data-aos="fade-up">
                     </div>
-                    <div class="form-textarea-group">
-                        <textarea class="form-textarea" name="" id="" cols="30" rows="10" placeholder="Digite Sua Mensagem"></textarea>
+                    <div class="form-textarea-group" data-aos="fade-up">
+                        <textarea class="form-textarea" name="" id="" cols="30" rows="10" placeholder="Digite Sua Mensagem" data-aos="fade-up"></textarea>
                     </div>
-                    <div class="form-button-container">
+                    <div class="form-button-container" data-aos="fade-up">
                         <a id="form-submit-button" type="submit">Enviar Mensagem</a>
                     </div>
                 </form>
             </div>
         </section>
 
-        <section id="maps-section">
+        <section id="maps-section" data-aos="fade-up">
             <div id="maps-canvas">
             </div>
         </section>
         
         <footer>
-            <div class="logo-container">
+            <div class="logo-container" data-aos="fade-up">
                 <img class="logo-image" src="../../assets/compressed-img/architect-color.png" alt="logo">
                 <h2 class="logo-title">Arquiteto</h2>
             </div>
 
-            <div class="footer-contact">
+            <div class="footer-contact" data-aos="fade-up">
                 <h5 class="footer-title">Contato</h5>
                 <div class="footer-contact-list">
                     <div class="footer-contact-item">
@@ -154,7 +157,7 @@
                 </div>
             </div>
 
-            <div class="footer-services">
+            <div class="footer-services" data-aos="fade-up">
                 <h5 class="footer-title">Serviços</h5>
                 <div class="footer-service-list">
                     <div class="footer-service-item">
@@ -178,7 +181,7 @@
                 </div>
             </div>
 
-            <div class="footer-media">
+            <div class="footer-media" data-aos="fade-up">
                 <h5 class="footer-title">Siga-nos</h5>
                 <div class="media-list">
                     <a class="media-link" href="" tooltip="Facebook">
@@ -217,5 +220,11 @@
 
         <!-- Modal Script -->
         <script src="./../../scripts/modal-script.js"></script>
+
+        <!-- Animation Librarie Script -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>

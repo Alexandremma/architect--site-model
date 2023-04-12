@@ -6,6 +6,7 @@
 body {
     font-family: 'Barlow Condensed', serif;
     background-color: rgb(246, 246, 246);
+    transition: 2s;
 }
 
 /********** HEADER **********/
@@ -314,11 +315,15 @@ section#contact-section .contact-form-container .contact-form .form-button-conta
 
 /********** SECTION MAPS **********/
 section#maps-section {
-    padding: 2rem 0 0 0;
+    padding: 2rem 0;
 }
 
 section#maps-section #maps-canvas {
     height: 42rem;
+}
+
+#maps-canvas > div:nth-child(1) > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(1) {
+    display: none;
 }
 
 /********** FOOTER **********/

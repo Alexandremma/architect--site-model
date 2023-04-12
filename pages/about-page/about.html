@@ -12,7 +12,7 @@
         <!-- About Page Customized Style -->
         <link rel="stylesheet" href="./../../styles/about.css">
 
-        <!-- Responsive Style -->
+        <!-- Responsive Customized Style -->
         <link rel="stylesheet" href="./../../styles/media-queries.css">
 
         <!-- Barlow Condensed Font - Google Fonts -->
@@ -20,18 +20,21 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;500;700&display=swap" rel="stylesheet">
 
+        <!-- Animation Librarie Style -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
         <!-- FontAwesome Script -->
         <script src="https://kit.fontawesome.com/3388c38173.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <div class="logo-container">
+            <div class="logo-container" data-aos="fade-up">
                 <a class="logo-link" href="./../../index.html">
                     <img class="logo-image" src="./../../assets/compressed-img/architect-color.png" alt="logo">
                     <h2 class="logo-title">Arquiteto</h2>
                 </a>
             </div>
-            <nav class="">
+            <nav data-aos="fade-up">
                 <ul class="menu-list">
                     <li class="menu-item">
                         <a class="menu-item-link" href="./../../index.html">Home</a>
@@ -50,35 +53,35 @@
             <div class="view-filter"></div>
             <div class="banner-container">
                 <!-- <p class="banner-text">Nós vamos construir</p> -->
-                <h2 class="banner-title" style="text-align: center;">SOBRE</h2>
-                <p class="banner-subtitle">Conheça mais sobre nossa Equipe</p>
+                <h2 class="banner-title" style="text-align: center;" data-aos="fade-up">SOBRE</h2>
+                <p class="banner-subtitle" data-aos="fade-up">Conheça mais sobre nossa Equipe</p>
                 <!-- <a class="banner-link">Agende uma reunião com a nossa equipe</a> -->
             </div>
         </section>
 
         <section id="about-us">
-            <div class="about-us-image-container">
+            <div class="about-us-image-container" data-aos="fade-up">
                 <img class="about-us-image" src="../../assets/compressed-img/team.jpg" alt="Pessoas olhando para o computador">
             </div>
-            <div class="about-us-content">
-                <div>
+            <div class="about-us-content" data-aos="fade-up">
+                <div data-aos="fade-up">
                     <div class="line-decoration"></div>
                     <p class="about-us-subtitle">Conheça sobre nós</p>
                 </div>
-                <h2 class="about-us-title">Somos uma agência de arquitetura premiada</h2>
-                <p class="about-us-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni modi suscipit enim quam. Animi dolorem nostrum eos inventore, quidem ipsum</p>
-                <p class="about-us-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In assumenda nemo ullam praesentium voluptatum, eaque officiis natus eveniet possimus accusantium temporibus optio cupiditate hic! Consequatur beatae ex ullam officia ipsa.</p>
+                <h2 class="about-us-title" data-aos="fade-up">Somos uma agência de arquitetura premiada</h2>
+                <p class="about-us-text" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni modi suscipit enim quam. Animi dolorem nostrum eos inventore, quidem ipsum</p>
+                <p class="about-us-description" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In assumenda nemo ullam praesentium voluptatum, eaque officiis natus eveniet possimus accusantium temporibus optio cupiditate hic! Consequatur beatae ex ullam officia ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime at illum, delectus aperiam explicabo quod illo impedit eligendi, quidem distinctio id, placeat natus tenetur dolorum eum voluptates sed. Enim, dolores.</p>
             </div>
         </section>
 
         <section id="depositions">
             <div class="depositions-container">
-                <p class="deposition-text">"Empresa de alta qualidade e que recomendaria para todos. Isso se deve ao excelente serviço, preços competitivos e suporte ao cliente. É totalmente revigorante obter um toque tão pessoal."</p>
+                <p class="deposition-text" data-aos="fade-up">"Empresa de alta qualidade e que recomendaria para todos. Isso se deve ao excelente serviço, preços competitivos e suporte ao cliente. É totalmente revigorante obter um toque tão pessoal."</p>
                 <div class="deposition-info">
-                    <img class="deposition-image" src="./../../assets/compressed-img/perfil-roberta.jpg" alt="foto de perfil da cliente">
+                    <img class="deposition-image" src="./../../assets/compressed-img/perfil-roberta.jpg" alt="foto de perfil da cliente" data-aos="fade-up">
                     <div class="deposition-client">
-                        <span class="deposition-client-name">Roberta Silva</span>
-                        <span class="deposition-client-function">Cliente</span>
+                        <span class="deposition-client-name" data-aos="fade-up">Roberta Silva</span>
+                        <span class="deposition-client-function" data-aos="fade-up">Cliente</span>
                     </div>
                 </div>
             </div>
@@ -87,27 +90,48 @@
 
         <section id="our-team">
             <div class="our-team-header">
-                <div class="decoration-line"></div>
-                <p class="our-team-subtitle">Conheça nosso time</p>
-                <h2 class="our-team-title">Arquitetos Experientes</h2>
+                <div class="decoration-line" data-aos="fade-up"></div>
+                <p class="our-team-subtitle" data-aos="fade-up">Conheça nosso time</p>
+                <h2 class="our-team-title" data-aos="fade-up">Arquitetos Experientes</h2>
             </div>
             <div class="our-team-members">
-                <div class="our-team-member">
-                    <img class="our-team-member-image" src="./../../assets/compressed-img/perfil-archtect-3.jpg" alt="foto de perfil do membro da empresa">
+                <div class="our-team-member" data-aos="fade-up">
+                    <div class="member-image-container">
+                        <div class="member-image-hover">
+                            <a href="https://www.google.com" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <img class="our-team-member-image" src="./../../assets/compressed-img/perfil-archtect-3.jpg" alt="foto de perfil do membro da empresa">
+                    </div>
                     <div class="our-team-member-info">
                         <span class="our-team-member-name">Suzana Paz</span>
                         <span class="our-team-member-function">Arquiteta</span>
                     </div>
                 </div>
-                <div class="our-team-member">
-                    <img class="our-team-member-image" src="./../../assets/compressed-img/perfil-archtect.jpg" alt="foto de perfil do membro da empresa">
+                <div class="our-team-member" data-aos="fade-up">
+                    <div class="member-image-container">
+                        <div class="member-image-hover">
+                            <a href="https://www.google.com" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <img class="our-team-member-image" src="./../../assets/compressed-img/perfil-archtect.jpg" alt="foto de perfil do membro da empresa">
+                    </div>
                     <div class="our-team-member-info">
                         <span class="our-team-member-name">Rodrigo Sanches</span>
                         <span class="our-team-member-function">Arquiteto</span>
                     </div>
                 </div>
-                <div class="our-team-member">
-                    <img class="our-team-member-image" src="./../../assets/compressed-img/perfil-founder.jpg" alt="foto de perfil do membro da empresa">
+                <div class="our-team-member" data-aos="fade-up">
+                    <div class="member-image-container">
+                        <div class="member-image-hover">
+                            <a href="https://www.google.com" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <img class="our-team-member-image" src="./../../assets/compressed-img/perfil-founder.jpg" alt="foto de perfil do membro da empresa">
+                    </div>
                     <div class="our-team-member-info">
                         <span class="our-team-member-name">Júlia Dolores</span>
                         <span class="our-team-member-function">CEO</span>
@@ -118,21 +142,21 @@
 
         <section id="hire-us">
             <div class="hire-us-text-container">
-                <p class="hire-us-text">Contratar para novos projetos</p>
-                <h2 class="hire-us-content">Faça o plano do seu Projeto Arquitetônico agora</h2>
+                <p class="hire-us-text" data-aos="fade-up">Contratar para novos projetos</p>
+                <h2 class="hire-us-content" data-aos="fade-up">Faça o plano do seu Projeto Arquitetônico agora</h2>
             </div>
             <div class="hire-us-button-container">
-                <a class="hire-us-button" href="./../../pages/contact-page/contact.html">Entre em Contato</a>
+                <a class="hire-us-button" href="./../../pages/contact-page/contact.html" data-aos="fade-up">Entre em Contato</a>
             </div>
         </section>
 
         <footer>
-            <div class="logo-container">
+            <div class="logo-container" data-aos="fade-up">
                 <img class="logo-image" src="./../../assets/compressed-img/architect-color.png" alt="logo">
                 <h2 class="logo-title">Arquiteto</h2>
             </div>
 
-            <div class="footer-contact">
+            <div class="footer-contact" data-aos="fade-up">
                 <h5 class="footer-title">Contato</h5>
                 <div class="footer-contact-list">
                     <div class="footer-contact-item">
@@ -160,7 +184,7 @@
                 </div>
             </div>
 
-            <div class="footer-services">
+            <div class="footer-services" data-aos="fade-up">
                 <h5 class="footer-title">Serviços</h5>
                 <div class="footer-service-list">
                     <div class="footer-service-item">
@@ -184,7 +208,7 @@
                 </div>
             </div>
 
-            <div class="footer-media">
+            <div class="footer-media" data-aos="fade-up">
                 <h5 class="footer-title">Siga-nos</h5>
                 <div class="media-list">
                     <a class="media-link" href="" tooltip="Facebook">
@@ -202,5 +226,11 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Animation Librarie Script -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>
