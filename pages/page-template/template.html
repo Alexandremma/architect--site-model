@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- Barlow Condensed Font - Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+        <!-- Browser Tab Icon -->
+        <link rel="icon" href="./assets/img/arch-icon.png">
+
+        <!-- Global Customized Style -->
+        <link rel="stylesheet" href="./styles/global.css">
+
+        <!-- Responsive Customized Style -->
+        <link rel="stylesheet" href="./styles/media-queries.css">
+
+        <!-- Animations Customized Style -->
+        <link rel="stylesheet" href="./styles/animations.css">
+
+        <!-- Animation Librarie Style -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- https://github.com/michalsnik/aos -->
+
+        <!-- FontAwesome Script -->
+        <script src="https://kit.fontawesome.com/3388c38173.js" crossorigin="anonymous"></script>
+    </head>
+    <body onload="loadingPage()">
+        
+        <!-- Global Customized Script -->
+        <script src="./scripts/global.js"></script>
+
+        <!-- Animation Librarie Script -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            duration: 1500, // values from 0 to 3000, with step 50ms
+            once: true, // whether animation should happen only once - while scrolling down
+          });
+        </script>
+    </body>
+</html>

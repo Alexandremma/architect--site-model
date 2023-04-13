@@ -1,3 +1,4 @@
+/********** GLOBAL **********/
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +20,7 @@ button {
     border: none;
 }
 
+/********** PRELOAD **********/
 .preload {
     position: fixed;
     top: 0;
@@ -54,4 +56,266 @@ button {
 
 .loaded {
     display: none;
+}
+
+/********** HEADER **********/
+header {
+    /* flex flex-row justify-between bg-azul-claro p-2 h-26 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0.5rem;
+    height: 6.5rem;
+}
+
+header .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* animation: fade-down 0.6s; */
+}
+
+/* nav {
+    animation: fade-down 0.6s;
+} */
+
+header .logo-link {
+    /* flex flex-row justify-center items-center gap-2 p-2 */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+header .logo-link .logo-image {
+    width: 3rem;
+}
+
+header .logo-link .logo-title {
+    font-size: 1.8rem;
+    color: rgb(192, 172, 149);
+}
+
+header nav {
+    /* flex justify-center items-center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-list {
+    /* flex flex-row justify-between gap-4 h-full */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.2rem;
+    height: 100%;
+}
+
+.menu-list .menu-item {
+    /* flex justify-center items-center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-list .menu-item .menu-item-link {
+    /* px-3 py-2 rounded-lg hover:bg-azul-escuro hover:text-white duration-200 */
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu-list .menu-item .menu-item-link:hover {
+    /* background-color: rgb(136, 136, 136); */
+    background-color: rgb(192, 172, 149);
+    color: #fff;
+}
+
+/********** SECTION BANNER **********/
+section#banner-section {
+    /* w-full h-96 */
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 24rem;
+    /* padding: 0 1rem; */
+    background-image: url('../assets/compressed-img/escadas-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+section#banner-section .view-filter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #232323;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+#banner-section .banner-container {
+    /* flex flex-col */
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+    padding: 0 1rem;
+    z-index: 9;
+    /* animation: fade-up 0.6s; */
+}
+
+#banner-section .banner-container .banner-text {
+    font-size: 1rem;
+    color: #C0AC95;
+    /* border-bottom: 2px solid #C0AC95; */
+    /* max-width: 7.5rem; */
+}
+
+#banner-section .banner-container .decoration-line {
+    height: 2px;
+    width: 7rem;
+    margin-bottom: 0.5rem;
+    background-color: #C0AC95;
+}
+
+#banner-section .banner-container .banner-title {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+#banner-section .banner-container .banner-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 120px;
+    background-color: #C0AC95;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #fff;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+#banner-section .banner-container .banner-link:hover {
+    background-color: #76634c;
+    cursor: pointer;
+}
+
+/********** FOOTER **********/
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 1rem 4rem 1rem;
+    background-color: #232323;
+}
+
+footer .logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem
+}
+
+footer .logo-container .logo-image {
+    width: 3rem;
+}
+
+footer .logo-container .logo-title {
+    font-size: 1.8rem;
+    color: rgb(192, 172, 149);
+}
+
+footer .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+footer .footer-title {
+    margin-bottom: 1rem;
+    font-size: 24px;
+    color: #fff;
+}
+
+.footer-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-contact .footer-contact-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-icon {
+    width: 16px;
+    height: 16px;
+    color: #54595F;
+}
+
+.footer-contact .footer-contact-item:hover .footer-icon, 
+.footer-contact .footer-contact-item:hover .footer-contact-text {
+    color: #fff;
+}
+
+
+.footer-contact .footer-contact-text {
+    font-size: 1rem;
+    color: #54595F;
+}
+
+.footer-service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #54595F;
+}
+
+.footer-services .footer-service-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-services .footer-service-item:hover .footer-icon,
+.footer-services .footer-service-item:hover .footer-service-text {
+    color: #fff;
+}
+
+footer .footer-media .media-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;   
+}
+
+.media-list .media-link i {
+    padding: 0.5rem;
+    background-color: #fff;
+    color: #232323;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+
+.media-list .media-link i:hover {
+    background-color: #868686;
+    cursor: pointer;
 }
