@@ -45,7 +45,7 @@ header .logo-link .logo-title {
     color: rgb(192, 172, 149);
 }
 
-header nav {
+header .nav {
     /* flex justify-center items-center */
     display: flex;
     justify-content: center;
