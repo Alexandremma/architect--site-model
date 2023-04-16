@@ -17,8 +17,19 @@ h2 {
 section#banner-section {
     width: 100%;
     height: 24rem;
-    background-image: url('https://cdn.create.vista.com/api/media/medium/6919509/stock-photo-modern-interior-room?token=');
     background-attachment: inherit;
+}
+
+section#banner-section.interior-design {
+    background-image: url('https://cdn.create.vista.com/api/media/medium/6919509/stock-photo-modern-interior-room?token=');
+}
+
+section#banner-section.architecture {
+    background-image: url('https://cdn.create.vista.com/api/media/medium/485705494/stock-photo-eco-architecture-green-tree-apartment?token=');
+}
+
+section#banner-section.measures {
+    background-image: url('https://cdn.create.vista.com/api/media/medium/203539444/stock-photo-top-view-word-diy-made?token=');
 }
 
 #banner-section .banner-container .banner-text {

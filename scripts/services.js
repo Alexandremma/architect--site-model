@@ -8,7 +8,7 @@ menuItems.forEach((menuItem) => {
         });
 
         menuItem.classList.add("aside-menu-highlight");
-    })
+    });
 });
 
 // ********** CAROUSEL JS
