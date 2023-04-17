@@ -180,6 +180,7 @@ section#contact-section .decoration-line {
 }
 
 section#contact-section .contact-subtitle {
+    padding: 0;
     font-size: 1rem;
     color: #C0AC95;
     text-transform: uppercase;
@@ -191,6 +192,7 @@ section#contact-section .contact-title {
 }
 
 section#contact-section .contact-description {
+    padding: 0;
     font-size: 1rem;
     color: #868686;
 }
@@ -334,12 +336,12 @@ section#doubts-section {
     justify-content: center;
     align-items: start;
     gap: 1.5rem;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
 }
 
 section#doubts-section .image-container {
     display: none;
-    flex: 45%;
+    flex: 50%;
 }
   
 section#doubts-section .doubts-section-image {
@@ -349,7 +351,7 @@ section#doubts-section .doubts-section-image {
 }
 
 section#doubts-section .accordion-container {
-    flex: 55%;
+    flex: 50%;
     /* width: 100%;
     max-width: 500px; */
     /* padding: 10px; */
@@ -374,7 +376,7 @@ section#doubts-section .accordion-container .doubts-subtitle {
 }
 
 section#doubts-section .accordion-container .doubts-title {
-    padding: 0.5rem 0;
+    padding: 0.5rem 0 1.5rem 0;
     font-size: 2rem;
     text-transform: uppercase;
 }
