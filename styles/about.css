@@ -15,7 +15,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     background-color: #fff;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     height: 6.5rem;
 }
 
@@ -207,6 +207,7 @@ section#about-us .about-us-content .about-us-text {
 
 section#about-us .about-us-content .about-us-description {
     font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 /********** SECTION DEPOSITIONS **********/

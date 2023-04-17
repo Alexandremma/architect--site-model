@@ -18,7 +18,7 @@ function metricAnimation() {
                 if (startValue == endValue) {
                     clearInterval(counter);
                 }
-            }, 4);
+            }, 8);
         } else {
             return;
         }

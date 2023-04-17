@@ -16,7 +16,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     background-color: #fff;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     height: 6.5rem;
 }
 
@@ -316,15 +316,120 @@ section#contact-section .contact-form-container .contact-form .form-button-conta
 
 /********** SECTION MAPS **********/
 section#maps-section {
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
 }
 
 section#maps-section #maps-canvas {
-    height: 42rem;
+    height: 30rem;
 }
 
 #maps-canvas > div:nth-child(1) > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(1) {
     display: none;
+}
+
+/********** COMPONENT ACCORDION **********/
+section#doubts-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+
+section#doubts-section .image-container {
+    display: none;
+    flex: 45%;
+}
+  
+section#doubts-section .doubts-section-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px #0003;
+}
+
+section#doubts-section .accordion-container {
+    flex: 55%;
+    /* width: 100%;
+    max-width: 500px; */
+    /* padding: 10px; */
+    /* margin: auto 5px; */
+    margin: 0;
+    /* box-shadow: 0px 0px 8px #0003;
+    background-color: white;
+    border-radius: 8px; */
+}
+
+section#doubts-section .accordion-container .decoration-line {
+    height: 2px;
+    width: 2.5rem;
+    background-color: #C0AC95;
+}
+
+section#doubts-section .accordion-container .doubts-subtitle {
+    padding: 0.2rem 0 0 0;
+    font-size: 1rem;
+    color: #C0AC95;
+    text-transform: uppercase;
+}
+
+section#doubts-section .accordion-container .doubts-title {
+    padding: 0.5rem 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+  
+section#doubts-section .accordion-container .accordion-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0px 0px 8px #0003;
+    background-color: white;
+    border-radius: 8px;
+}
+  
+section#doubts-section .accordion-container .accordion-list-item .accordion-item {
+    border-radius: 5px;
+}
+  
+section#doubts-section .accordion-container .accordion-list-item .accordion-item:hover {
+    opacity: 0.9;
+}
+  
+section#doubts-section .accordion-container .accordion-list-item .accordion-item .accordion-header {
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+section#doubts-section .accordion-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 2s linear;
+    font-size: 14px;
+}
+  
+section#doubts-section .active {
+    max-height: 300px;
+}
+
+section#doubts-section span {
+    color: #232323;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+section#doubts-section .accordion-icon {
+    color: #232323;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+  
+p {
+    padding: 0rem 1rem 1rem 1rem;
+    text-align: justify;
 }
 
 /********** FOOTER **********/

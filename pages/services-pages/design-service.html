@@ -44,22 +44,50 @@
         </div>
         <div id="loaded" class="loaded">
             <header>
-                <div class="logo-container" data-aos="fade-right">
-                    <a class="logo-link" href="./../../index.html">
-                        <img class="logo-image" src="./../../assets/compressed-img/architect-color.png" alt="logo">
-                        <h2 class="logo-title">Arquiteto</h2>
-                    </a>
+                <div class="header-container">
+                    <div class="logo-container" data-aos="fade-right">
+                        <a class="logo-link" href="./../../index.html">
+                            <!-- <i class="fa-duotone fa-archway"></i> -->
+                            <img class="logo-image" src="./../../assets/compressed-img/architect-color.png" alt="logo">
+                            <h2 class="logo-title">Arquiteto</h2>
+                        </a>
+                    </div>
+                    
+                    <div class="nav" data-aos="fade-left">
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <a class="menu-item-link" href="./../../index.html">Home</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-item-link" href="./../../pages/about-page/about.html">Sobre Nós</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-item-link" href="./../../pages/services-pages/design-service.html">Serviços</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-item-link" href="./../../pages/contact-page/contact.html">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="mobile-menu-icon" onclick="openMobileMenu()" data-aos="fade-left">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                 </div>
-                <div class="nav" data-aos="fade-left">
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <a class="menu-item-link" href="./../../index.html">Home</a>
+
+                <div id="mobile-menu" class="mobile-menu" data-aos="fade-up">
+                    <ul class="mobile-menu-list">
+                        <li class="mobile-menu-item">
+                            <a class="mobile-menu-item-link" href="./../../index.html">Home</a>
                         </li>
-                        <li class="menu-item">
-                            <a class="menu-item-link" href="./../about-page/about.html">Sobre Nós</a>
+                        <li class="mobile-menu-item">
+                            <a class="mobile-menu-item-link" href="./../../pages/about-page/about.html">Sobre Nós</a>
                         </li>
-                        <li class="menu-item">
-                            <a class="menu-item-link" href="./../contact-page/contact.html">Contato</a>
+                        <li class="mobile-menu-item">
+                            <a class="mobile-menu-item-link" href="./../../pages/services-pages/design-service.html">Serviços</a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a class="mobile-menu-item-link" href="./../../pages/contact-page/contact.html">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -149,6 +177,20 @@
                     </div>
                 </section> -->
 
+                <div class="carousel">
+                    <ul class="carousel-items">
+                        <li class="carousel-item">
+                            <img src="https://cdn.create.vista.com/api/media/medium/19356471/stock-photo-modern-kitchen-with-sitting-and?token=">
+                        </li>
+                        <li class="carousel-item">
+                            <img src="https://cdn.create.vista.com/api/media/small/190920856/stock-photo-stylish-atmospheric-interior-empty-pub">
+                        </li>
+                        <li class="carousel-item">
+                            <img src="https://cdn.create.vista.com/api/media/medium/253603802/stock-photo-large-luxury-modern-bright-interiors?token=">
+                        </li>
+                    </ul>
+                </div>
+
                 <section id="hire-us" data-aos="fade-up">
                     <div class="hire-us-text-container">
                         <p class="hire-us-text" data-aos="fade-up">Contratar para novos projetos</p>
@@ -158,65 +200,6 @@
                         <a class="hire-us-button" href="./../../pages/contact-page/contact.html">Entre em Contato</a>
                     </div>
                 </section>
-                
-                <!-- <section id="first-section" data-aos="fade-up">
-                    <div class="image-container">
-                        <img class="first-section-image" width="500px" src="./../../assets/compressed-img/building.jpg" alt="">
-                    </div>
-                    <div class="accordion-container" data-aos="fade-up">
-                        <div class="accordion-list-item">
-                            <div class="accordion-item" style="background-color: #c4b5fd;">
-                                <div class="accordion-header">
-                                    <span>
-                                        HTML
-                                    </span> 
-                                    <div class="accordion-icon">+</div>
-                                </div>
-                        
-                                <div class="accordion-content">
-                                    <p>
-                                        HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. 
-                                        Define o significado e a estrutura do conteúdo da web. 
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item" style="background-color: #bef264;">
-                                <div class="accordion-header">
-                                    <span>
-                                        JavaScript
-                                    </span> 
-                                    <div class="accordion-icon">+</div>
-                                </div>
-                        
-                                <div class="accordion-content">
-                                    <p>
-                                        JavaScript® (às vezes abreviado para JS) é uma linguagem leve, 
-                                        interpretada e baseada em objetos com funções de primeira classe, 
-                                        mais conhecida como a linguagem de script para páginas Web, 
-                                        mas usada também em vários outros ambientes sem browser, tais como node.js, 
-                                        Apache CouchDB e Adobe Acrobat.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="accordion-item" style="background-color: #6ee7b7;">
-                                <div class="accordion-header">
-                                    <span>
-                                        CSS
-                                    </span> 
-                                    <div class="accordion-icon">+</div>
-                                </div>
-                        
-                                <div class="accordion-content">
-                                    <p>
-                                        CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) 
-                                        é uma linguagem de estilo (en-US) usada para descrever a apresentação de um documento escrito em HTML.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
             </main>
     
             <footer data-aos="fade-up">

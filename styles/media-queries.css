@@ -14,6 +14,7 @@ lg 1200px */
 @media screen and (min-width: 1024px) {
     header {
         padding: 0 3rem;
+        background-color: #fff;
     }
 
     header .logo-link .logo-image {
@@ -26,6 +27,18 @@ lg 1200px */
 
     .menu-list .menu-item .menu-item-link {
         font-size: 1.1rem;
+    }
+
+    header .header-container .nav {
+        display: flex;
+    }
+
+    header .header-container .mobile-menu-icon {
+        display: none;
+    }
+
+    header #mobile-menu.mobile-menu {
+        display: none;
     }
 
     /********** SECTION BANNER **********/
@@ -50,7 +63,7 @@ lg 1200px */
         font-size: 1rem;
     }
 
-    /********** SECTION SERVICES **********/
+    /********** SECTION SERVICES CARDS **********/
     #our-services-section {
         gap: 2rem;
         padding: 4rem 1rem 6rem 1rem;
@@ -130,12 +143,12 @@ lg 1200px */
     /* change here to flex-direction row */
     section#about-us .about-us-content {
         /* flex-direction: row; */
-        width: 80%;
-        padding-left: 10%;
+        width: 100%;
+        padding: 0 10%;
     }
 
     section#about-us .about-us-content .about-us-subtitle {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     section#about-us .about-us-content .about-us-title {
@@ -143,11 +156,11 @@ lg 1200px */
     }
 
     section#about-us .about-us-content .about-us-text {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     section#about-us .about-us-content .about-us-description {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     /********** SECTION DEPOSITIONS **********/
@@ -211,6 +224,20 @@ lg 1200px */
         flex-direction: row;
     }
 
+    /********** COMPONENT ACCORDION **********/
+    section#doubts-section {
+        flex-direction: row;
+    }
+
+    section#doubts-section .image-container {
+        display: block;
+    }
+
+    section#doubts-section .doubts-section-image {
+        height: 450px;
+        /* max-height: 500px; */
+    }
+
     /********** FOOTER **********/
     footer {
         flex-direction: row;
@@ -219,5 +246,52 @@ lg 1200px */
 
     footer .logo-container {
         align-items: start;
+    }
+
+    /********** PAGES SERVICES **********/
+    /********** SECTION SERVICE DESCRIPTION **********/
+    section#service-section {
+        flex-direction: row;
+    }
+
+    section#service-section #aside-content {
+        flex: 25%;
+    }
+
+    section#service-section #aside-content .aside-menu-content .aside-menu-item {
+        font-size: 1.1rem;
+    }
+
+    section#service-section #aside-content .aside-banner-content {
+        max-height: 250px;
+    }
+
+    section#service-section #aside-content .aside-banner-content .aside-banner-image {
+        height: 250px;
+    }
+
+    section#service-section .service-article {
+        flex: 75%;
+    }
+
+    section#service-section .service-article .service-article-image {
+        height: 400px;
+    }
+
+    section#service-section .service-article .service-article-image img {
+        height: auto;
+        scale: 1.2;
+    }
+
+    section#service-section .service-article .service-article-text-content .service-subtitle-container .service-subtitle {
+        font-size: 1.2rem;
+    }
+
+    section#service-section .service-article .service-article-text-content .service-article-title {
+        font-size: 2.5rem;
+    }
+
+    section#service-section .service-article .service-article-text-content .service-article-info {
+        font-size: 1.1rem;
     }
 }
