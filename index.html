@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="./styles/global.css">
 
         <!-- Home Page Customized Style -->
-        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/home.css">
 
         <!-- Responsive Customized Style -->
         <link rel="stylesheet" href="./styles/media-queries.css">
@@ -59,8 +59,23 @@
                             <li class="menu-item">
                                 <a class="menu-item-link" href="./pages/about-page/about.html">Sobre Nós</a>
                             </li>
-                            <li class="menu-item">
-                                <a class="menu-item-link" href="./pages/services-pages/design-service.html">Serviços</a>
+                            <li class="menu-item menu-item-dropdown">
+                                <a id="subMenuDropdownItem" class="menu-item-link" href="./pages/services-pages/design-service.html">Serviços</a>
+                                <div id="dropdownMenu" class="sub-menu-wrapper">
+                                    <div class="sub-menu">
+                                        <ul class="sub-menu-list">
+                                            <li class="sub-menu-item">
+                                                <a href="./pages/services-pages/design-service.html">Design de Interior</a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./pages/services-pages/arch-service.html">Arquitetura</a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./pages/services-pages/measures-service.html">Design e Medidas</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-item-link" href="./pages/contact-page/contact.html">Contato</a>
@@ -69,7 +84,8 @@
                     </div>
     
                     <div class="mobile-menu-icon" onclick="openMobileMenu()" data-aos="fade-left">
-                        <i class="fa-solid fa-bars"></i>
+                        <i id="mobile-open-menu-icon" class="fa-solid fa-bars"></i>
+                        <!-- <i id="mobile-close-menu-icon" class="fa-solid fa-xmark"></i> -->
                     </div>
                 </div>
 
@@ -81,9 +97,14 @@
                         <li class="mobile-menu-item">
                             <a class="mobile-menu-item-link" href="./pages/about-page/about.html">Sobre Nós</a>
                         </li>
-                        <li class="mobile-menu-item">
-                            <a class="mobile-menu-item-link" href="./pages/services-pages/design-service.html">Serviços</a>
+                        <li class="mobile-menu-item mobile-dropdown-sub-menu">
+                            <a id="mobile-menu-item-link" class="mobile-menu-item-link">Serviços</a>
                         </li>
+                        <div id="mobile-sub-menu" class="mobile-sub-menu">
+                            <a class="mobile-sub-menu-item" href="./pages/services-pages/design-service.html">Design de Interior</a>
+                            <a class="mobile-sub-menu-item" href="./pages/services-pages/arch-service.html">Arquitetura</a>
+                            <a class="mobile-sub-menu-item" href="./pages/services-pages/measures-service.html">Design e Medidas</a>
+                        </div>
                         <li class="mobile-menu-item">
                             <a class="mobile-menu-item-link" href="./pages/contact-page/contact.html">Contato</a>
                         </li>
