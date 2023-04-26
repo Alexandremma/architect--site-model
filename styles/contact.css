@@ -6,7 +6,7 @@
 body {
     font-family: 'Barlow Condensed', serif;
     background-color: rgb(246, 246, 246);
-    transition: 2s;
+    /* transition: 2s; */
 }
 
 /********** HEADER **********/
@@ -114,7 +114,6 @@ section#banner-section .view-filter {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
     padding: 0 1rem;
     z-index: 9;
 }
@@ -410,7 +409,7 @@ section#doubts-section .accordion-container .accordion-list-item .accordion-item
 section#doubts-section .accordion-content {
     overflow: hidden;
     max-height: 0;
-    transition: max-height 2s linear;
+    transition: max-height 0.6s linear;
     font-size: 14px;
 }
   

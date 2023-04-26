@@ -113,7 +113,6 @@ section#banner-section .view-filter {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
     padding: 0 1rem;
     z-index: 9;
 }
@@ -186,6 +185,7 @@ section#about-us .about-us-content .line-decoration {
 }
 
 section#about-us .about-us-content .about-us-subtitle {
+    margin-top: 0.5rem;
     font-size: 1rem;
     color: #C0AC95;
     text-transform: uppercase;
@@ -303,6 +303,7 @@ section#our-team .our-team-header .decoration-line {
 }
 
 section#our-team .our-team-header .our-team-subtitle {
+    margin-top: 0.5rem;
     font-size: 1rem;
     color: #C0AC95;
     text-transform: uppercase;

@@ -7,7 +7,7 @@
         <title>Serviços - Design de Interior</title>
 
         <!-- Materialize Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
 
         <!-- Barlow Condensed Font - Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,8 +61,23 @@
                             <li class="menu-item">
                                 <a class="menu-item-link" href="./../../pages/about-page/about.html">Sobre Nós</a>
                             </li>
-                            <li class="menu-item">
-                                <a class="menu-item-link" href="./../../pages/services-pages/design-service.html">Serviços</a>
+                            <li class="menu-item menu-item-dropdown">
+                                <a id="subMenuDropdownItem" class="menu-item-link" href="./../../pages/services-pages/design-service.html">Serviços</a>
+                                <div id="dropdownMenu" class="sub-menu-wrapper">
+                                    <div class="sub-menu">
+                                        <ul class="sub-menu-list">
+                                            <li class="sub-menu-item">
+                                                <a href="./../../pages/services-pages/design-service.html">Design de Interior</a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./../../pages/services-pages/arch-service.html">Arquitetura</a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./../../pages/services-pages/measures-service.html">Design e Medidas</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-item-link" href="./../../pages/contact-page/contact.html">Contato</a>
@@ -71,7 +86,8 @@
                     </div>
     
                     <div class="mobile-menu-icon" onclick="openMobileMenu()" data-aos="fade-left">
-                        <i class="fa-solid fa-bars"></i>
+                        <i id="mobile-open-menu-icon" class="fa-solid fa-bars"></i>
+                        <!-- <i id="mobile-close-menu-icon" class="fa-solid fa-xmark"></i> -->
                     </div>
                 </div>
 
@@ -83,9 +99,17 @@
                         <li class="mobile-menu-item">
                             <a class="mobile-menu-item-link" href="./../../pages/about-page/about.html">Sobre Nós</a>
                         </li>
-                        <li class="mobile-menu-item">
-                            <a class="mobile-menu-item-link" href="./../../pages/services-pages/design-service.html">Serviços</a>
+                        <li class="mobile-menu-item mobile-dropdown-sub-menu">
+                            <a id="mobile-menu-item-link" class="mobile-menu-item-link">
+                                Serviços
+                                <i id="mobile-dropdown-sub-menu-icon" class="fa-solid fa-caret-down"></i>
+                            </a>
                         </li>
+                        <div id="mobile-sub-menu" class="mobile-sub-menu">
+                            <a class="mobile-sub-menu-item" href="./../../pages/services-pages/design-service.html">Design de Interior</a>
+                            <a class="mobile-sub-menu-item" href="./../../pages/services-pages/arch-service.html">Arquitetura</a>
+                            <a class="mobile-sub-menu-item" href="./../../pages/services-pages/measures-service.html">Design e Medidas</a>
+                        </div>
                         <li class="mobile-menu-item">
                             <a class="mobile-menu-item-link" href="./../../pages/contact-page/contact.html">Contato</a>
                         </li>
@@ -155,41 +179,37 @@
                     </article>
                 </section>
 
-                <!-- <section id="carousel-section">
-                    <div class="carousel-container">
-                        <div class="carousel">
-                            <a class="carousel-item" href="#one!">
-                                <img src="https://cdn.create.vista.com/api/media/medium/19356471/stock-photo-modern-kitchen-with-sitting-and?token=">
-                            </a>
-                            <a class="carousel-item" href="#two!">
-                                <img src="https://cdn.create.vista.com/api/media/medium/9052175/stock-photo-living-room?token=">
-                            </a>
-                            <a class="carousel-item" href="#three!">
-                                <img src="https://cdn.create.vista.com/api/media/medium/7405996/stock-photo-family-room?token=">
-                            </a>
-                            <a class="carousel-item" href="#four!">
-                                <img src="https://cdn.create.vista.com/api/media/small/190920856/stock-photo-stylish-atmospheric-interior-empty-pub">
-                            </a>
-                            <a class="carousel-item" href="#five!">
-                                <img src="https://cdn.create.vista.com/api/media/medium/253603802/stock-photo-large-luxury-modern-bright-interiors?token=">
-                            </a>
+                <section id="gallery-section">
+                    <div class="gallery-section-container">
+                        <div id="carousel-container" class="carousel-container">
+                            <button class="carousel-button carousel-left-arrow" aria-label="previous image">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-button carousel-right-arrow" aria-label="next image">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                            <div class="carousel-wrapper">
+                                <div id="carousel" class="carousel">
+                                    <a class="carousel-item current-item">
+                                        <img class="carousel-item-image" src="https://source.unsplash.com/random/600x400/?nature" alt="">
+                                    </a>
+                                    <a class="carousel-item">
+                                        <img class="carousel-item-image" src="https://source.unsplash.com/random/600x400/?creature" alt="">
+                                    </a>
+                                    <a class="carousel-item">
+                                        <img class="carousel-item-image" src="https://source.unsplash.com/random/600x400/?flower" alt="">
+                                    </a>
+                                    <a class="carousel-item">
+                                        <img class="carousel-item-image" src="https://source.unsplash.com/random/600x400/?animal" alt="">
+                                    </a>
+                                    <a class="carousel-item">
+                                        <img class="carousel-item-image" src="https://source.unsplash.com/random/600x400/?architecture" alt="">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </section> -->
-
-                <div class="carousel">
-                    <ul class="carousel-items">
-                        <li class="carousel-item">
-                            <img src="https://cdn.create.vista.com/api/media/medium/19356471/stock-photo-modern-kitchen-with-sitting-and?token=">
-                        </li>
-                        <li class="carousel-item">
-                            <img src="https://cdn.create.vista.com/api/media/small/190920856/stock-photo-stylish-atmospheric-interior-empty-pub">
-                        </li>
-                        <li class="carousel-item">
-                            <img src="https://cdn.create.vista.com/api/media/medium/253603802/stock-photo-large-luxury-modern-bright-interiors?token=">
-                        </li>
-                    </ul>
-                </div>
+                </section>
 
                 <section id="hire-us" data-aos="fade-up">
                     <div class="hire-us-text-container">
@@ -281,7 +301,7 @@
         </div>
 
         <!-- Materialize Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
 
         <!-- Global Customized Script -->
         <script src="./../../scripts/global.js"></script>

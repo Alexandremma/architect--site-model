@@ -50,9 +50,9 @@ lg 1200px */
         font-size: 1.5rem;
     }
 
-    #banner-section .banner-container .decoration-line {
+    /* #banner-section .banner-container .decoration-line {
         width: 11rem;
-    }
+    } */
 
     #banner-section .banner-container .banner-title {
         font-size: 4rem;
@@ -196,8 +196,14 @@ lg 1200px */
         gap: 10rem;
     }
 
+    /********** PAGE SERVICES **********/
+    /********** SECTION GALLERY **********/
+    section#gallery-section {
+        display: flex;
+    }
+
     /********** PAGE CONTACT **********/
-    /********** CONTACT SECTION **********/
+    /********** SECTION CONTACT **********/
     section#contact-section {
         flex-direction: row;
         padding: 4rem 2rem;

@@ -6,22 +6,36 @@ accordionItems.forEach((accordionItem) => {
     const accordionContent = accordionItem.querySelector(".accordion-content");
 
     accordionHeader.addEventListener("click", () => {
-        headerClick(accordionItem, accordionContent, accordionHeader);
+        headerClick(accordionItem, accordionHeader, accordionContent);
     });
 });
 
-function headerClick(accordionItem, accordionContent, accordionHeader) {
-    const accordionIcon = accordionHeader.querySelector(".accordion-icon");
+function headerClick(accordionItem, accordionHeader, accordionContent) {
+    let accordionIcon = accordionHeader.querySelector(".accordion-icon").innerHTML == '+' ? '+' : '-';
     
-    switch (accordionIcon.innerHTML) {
+    accordionItems.forEach((accordionItemIntern) => {
+        if (accordionItem == accordionItemIntern) return;
+        let accordionInternContent = accordionItemIntern.querySelector(".accordion-content");
+        let accordionInternIcon = accordionItemIntern.querySelector(".accordion-icon");
+        accordionInternContent.classList.remove("active");
+        accordionInternIcon.innerHTML = "+";
+    });
+
+    console.log(accordionIcon);
+
+    switch (accordionIcon) {
         case '+':
+            console.log('+');
             accordionContent.classList.toggle("active");
-            accordionIcon.innerHTML = "-";
+            accordionIcon = "-";
             break;
         case '-':
+            console.log('-');
             accordionContent.classList.toggle("active");
-            accordionIcon.innerHTML = "+";        
+            accordionIcon = "+";
             break;
+        default: 
+            return;
     }
 
     // if (accordionIcon.innerHTML == "+") {

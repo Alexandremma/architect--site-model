@@ -27,6 +27,16 @@ dropdownMenu.addEventListener('mouseout', (event) => {
 });
 
 mobileMenuLink.addEventListener('click', (event) => {
+    const mobileDropdownSubmenuIcon = document.getElementById("mobile-dropdown-sub-menu-icon");
+
+    if (mobileDropdownSubmenuIcon.classList.contains('fa-caret-down')) {
+        mobileDropdownSubmenuIcon.classList.remove('fa-caret-down');
+        mobileDropdownSubmenuIcon.classList.add('fa-caret-up');
+    } else {
+        mobileDropdownSubmenuIcon.classList.remove('fa-caret-up');
+        mobileDropdownSubmenuIcon.classList.add('fa-caret-down');
+    }
+
     mobileSubMenu.classList.toggle('mobile-sub-menu-appear');
     // mobileSubMenu.style.overflow = 'visible';
     // mobileSubMenu.style.maxHeight = '500px'
